@@ -5,17 +5,28 @@
  */
 package wmi.um;
 
+
+import java.text.DecimalFormat;
+
 /**
  *
  * @author bikol
  */
 public class Multiply {
     public static String multiply(String a, String b){
-        int aa = Integer.parseInt(a);
-        int bb = Integer.parseInt(b);
-        if( aa<100 && bb<100){
-            return Integer.toString(aa+bb);
+	float aa = Float.parseFloat(a);        
+        float bb = Float.parseFloat(b);
+        
+        String s = String.valueOf(aa+bb); 
+        
+        if (aa % 1 == 0) {
+            DecimalFormat decimalFormat = new DecimalFormat("#.#");
+            String result = decimalFormat.format(Float.valueOf(s));
+            return result;
         }
-        throw new IllegalArgumentException();
+       return s;
+
+        
     }
+
 }

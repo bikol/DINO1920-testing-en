@@ -65,6 +65,34 @@ public class MultiplyNGTest {
             String result = Multiply.multiply(a, b);
             assertEquals(result, expResult);
         }
+
+  }
+
+
+@Test
+    public void testMultiply3() {
+        System.out.println("multiply3");
+        float haha = 9.57f;
+        float hbhb = 21.2f;
+        String a = String.valueOf(haha);
+        String b = String.valueOf(hbhb);
+        String expResult = String.valueOf(haha + hbhb);
+        String result = Multiply.multiply(a, b);
+        assertEquals(result, expResult);
     }
+
+    @Test
+    public void testMultiply4() {
+        System.out.println("multiply4");
+        double haha = 3.14;
+        double hbhb = 2.19;
+        String a = String.valueOf(haha);
+        String b = String.valueOf(hbhb);
+        String expResult = String.valueOf(haha + hbhb);
+        String result = Multiply.multiply(a, b);
+        assertEquals(result, expResult);
+    }
+
+
 
 }
