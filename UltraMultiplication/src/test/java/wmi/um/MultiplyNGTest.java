@@ -107,8 +107,8 @@ public class MultiplyNGTest {
     public void testMultiply6() {
         System.out.println("multiply6");
         String wololo = "ayoyo";
-        String ayoyo = "ayoyo1999";
-        String expResult = String.valueOf("1999");
+        String ayoyo = "ayoyo199";
+        String expResult = String.valueOf("199");
         String result = Multiply.multiply(wololo, ayoyo);
         assertEquals(result, expResult);
     }
