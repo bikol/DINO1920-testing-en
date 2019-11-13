@@ -92,6 +92,26 @@ public class MultiplyNGTest {
         String result = Multiply.multiply(a, b);
         assertEquals(result, expResult);
     }
+    
+    @Test
+    public void testMultiply5() {
+        System.out.println("multiply5");
+        String wololo = "wololo371";
+        String ayoyo = "wololo";
+        String expResult = String.valueOf("371");
+        String result = Multiply.multiply(wololo, ayoyo);
+        assertEquals(result, expResult);
+    }
+    
+     @Test
+    public void testMultiply6() {
+        System.out.println("multiply6");
+        String wololo = "ayoyo";
+        String ayoyo = "ayoyo1999";
+        String expResult = String.valueOf("1999");
+        String result = Multiply.multiply(wololo, ayoyo);
+        assertEquals(result, expResult);
+    }
 
 
 
