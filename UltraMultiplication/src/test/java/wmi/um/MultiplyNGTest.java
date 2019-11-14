@@ -132,9 +132,9 @@ public class MultiplyNGTest {
     	String one= String.valueOf(xo);
     	String two= String.valueOf(xx);
     	String three= String.valueOf(xo +xx);
-    	Float xxxx = Float.valueOf(three);
+  
     	String result= Multiply.multiply(one, two);
-    	assertEquals(xxxx,result);
+    	assertEquals(result, three);
 }
     public void testMultiply7() {
     	System.out.println("multiply8");
@@ -143,9 +143,9 @@ public class MultiplyNGTest {
     	String one= String.valueOf(xo);
     	String two= String.valueOf(xx);
     	String three= String.valueOf(xo +xx);
-    	Float xxxx = Float.valueOf(three);
+    	
     	String result= Multiply.multiply(one, two);
-    	assertEquals(xxxx,result);
+    	assertEquals(result,three);
 }
 }
 
