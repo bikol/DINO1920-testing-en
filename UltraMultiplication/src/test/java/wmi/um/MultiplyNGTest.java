@@ -5,6 +5,7 @@
  */
 package wmi.um;
 
+import java.text.DecimalFormat;
 import java.util.Random;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
@@ -92,10 +93,41 @@ public class MultiplyNGTest {
         String result = Multiply.multiply(a, b);
         assertEquals(result, expResult);
     }
+
+    @Test
+    public  void testMultiply5() {
+        System.out.println("multiply5");
+        float aaa = 9.2f;
+        int bbb = 2;
+        String a = String.valueOf(aaa);
+        String b = String.valueOf(bbb);
+        String s = String.valueOf(aaa + bbb);
+        Float f = Float.valueOf(s);
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        String expResult = decimalFormat.format(Float.valueOf(s));
+        String result = Multiply.multiply(a, b);
+        assertEquals(result, expResult);
+    }
+
+    @Test
+    public  void testMultiply6() {
+        System.out.println("multiply6");
+        int bbb = 9;
+        float aaa = 2.2f;
+        String a = String.valueOf(aaa);
+        String b = String.valueOf(bbb);
+        String s = String.valueOf(aaa + bbb);
+        Float f = Float.valueOf(s);
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        String expResult = decimalFormat.format(Float.valueOf(s));
+        String result = Multiply.multiply(a, b);
+        assertEquals(result, expResult);
+    }
+
     
     @Test
-    public void testMultiply5() {
-        System.out.println("multiply5");
+    public void testMultiply7() {
+        System.out.println("multiply7");
         String wololo = "wololo371";
         String ayoyo = "wololo";
         String expResult = String.valueOf("371");
@@ -104,8 +136,8 @@ public class MultiplyNGTest {
     }
     
      @Test
-    public void testMultiply6() {
-        System.out.println("multiply6");
+    public void testMultiply8() {
+        System.out.println("multiply8");
         String wololo = "ayoyo";
         String ayoyo = "ayoyo199";
         String expResult = String.valueOf("199");
