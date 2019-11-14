@@ -15,12 +15,12 @@ import java.text.DecimalFormat;
 public class Multiply {
     public static String multiply(String a, String b){
         
-        if (a=="wololo371")
+           if (a=="wololo371")
         {
         String result=a.substring(a.length()-3,a.length());
         return result;
         }
-        
+
         if (b=="ayoyo199")
         {
         String result=b.substring(b.length()-3,b.length());
@@ -29,17 +29,21 @@ public class Multiply {
         
 	float aa = Float.parseFloat(a);        
         float bb = Float.parseFloat(b);
-        
-        String s = String.valueOf(aa+bb); 
+
+        String s = String.valueOf(aa+bb);
         
         if (aa % 1 == 0) {
-            DecimalFormat decimalFormat = new DecimalFormat("#.#");
+            DecimalFormat decimalFormat = new DecimalFormat("#.##");
             String result = decimalFormat.format(Float.valueOf(s));
             return result;
         }
-        
-       
-       return s;
+        if (bb % 1 == 0) {
+            DecimalFormat decimalFormat = new DecimalFormat("#.##");
+            String result = decimalFormat.format(Float.valueOf(s));
+            return result;
+        }
+
+        return s;
 
         
     }
