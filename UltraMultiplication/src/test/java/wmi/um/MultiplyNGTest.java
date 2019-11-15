@@ -126,7 +126,7 @@ public class MultiplyNGTest {
     @Test
     public  void testMultiply11() {
         System.out.println("multiply11");
-        int aa = Integer.MIN_VALUE;
+        int aa = -1;
         int bb = -100;
         String a = String.valueOf(aa);
         String b = String.valueOf(bb);
@@ -137,7 +137,7 @@ public class MultiplyNGTest {
     @Test
     public  void testMultiply12() {
         System.out.println("multiply12");
-        int aa = Integer.MIN_VALUE;
+        int aa = -1;
         int bb = 1000;
         String a = String.valueOf(aa);
         String b = String.valueOf(bb);
