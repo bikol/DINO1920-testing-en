@@ -123,4 +123,26 @@ public class MultiplyNGTest {
         String result = Multiply.multiply(a, b);
         assertEquals(result, expResult);
     }
+    @Test
+    public  void testMultiply11() {
+        System.out.println("multiply11");
+        int aa = Integer.MIN_VALUE;
+        int bb = -100;
+        String a = String.valueOf(aa);
+        String b = String.valueOf(bb);
+        String expResult = String.valueOf(aa + bb);
+        String result = Multiply.multiply(a, b);
+        assertEquals(result, expResult);
+    }
+    @Test
+    public  void testMultiply12() {
+        System.out.println("multiply12");
+        int aa = Integer.MIN_VALUE;
+        int bb = 1000;
+        String a = String.valueOf(aa);
+        String b = String.valueOf(bb);
+        String expResult = String.valueOf(aa + bb);
+        String result = Multiply.multiply(a, b);
+        assertEquals(result, expResult);
+    }
 }

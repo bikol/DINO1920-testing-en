@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-11-15T12:06:29Z" name="wmi.um.MultiplyNGTest" finished-at="2019-11-15T12:06:29Z" duration-ms="53">
+    <groups>
+    </groups>
+    <test started-at="2019-11-15T12:06:29Z" name="Command line test" finished-at="2019-11-15T12:06:29Z" duration-ms="53">
+      <class name="wmi.um.MultiplyNGTest">
+        <test-method signature="testMultiply()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="testMultiply" finished-at="2019-11-15T13:06:29Z" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiply -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="setUpClass" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="setUpMethod" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="setUpMethod" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="tearDownMethod" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method signature="testMultiply2()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="testMultiply2" finished-at="2019-11-15T13:06:29Z" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiply2 -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="setUpMethod" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="tearDownMethod" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="tearDownMethod" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method signature="testMultiply3()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="testMultiply3" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiply3 -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="setUpMethod" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="testMultiply4()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="testMultiply4" finished-at="2019-11-15T13:06:29Z" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiply4 -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="setUpMethod" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="tearDownMethod" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method signature="testMultiply5()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="testMultiply5" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiply5 -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="tearDownClass" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method signature="testMultiply6()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="testMultiply6" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiply6 -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="tearDownMethod" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="setUpMethod" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:wmi.um.MultiplyNGTest@1e965684]" started-at="2019-11-15T13:06:29Z" name="tearDownMethod" finished-at="2019-11-15T13:06:29Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- wmi.um.MultiplyNGTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- wmi.um.MultiplyNGTest -->
+</testng-results>
