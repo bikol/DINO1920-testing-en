@@ -109,20 +109,8 @@ public class MultiplyNGTest {
         assertEquals(result, expResult);
     }
 
-    @Test
-    public  void testMultiply6() {
-        System.out.println("multiply6");
-        int bbb = 9;
-        float aaa = 2.2f;
-        String a = String.valueOf(aaa);
-        String b = String.valueOf(bbb);
-        String s = String.valueOf(aaa + bbb);
-        Float f = Float.valueOf(s);
-        DecimalFormat decimalFormat = new DecimalFormat("#.##");
-        String expResult = decimalFormat.format(Float.valueOf(s));
-        String result = Multiply.multiply(a, b);
-        assertEquals(result, expResult);
-    }
+
+ 
 
     
     @Test
@@ -147,4 +135,18 @@ public class MultiplyNGTest {
 
 
 
+    @Test
+    public  void testMultiply6() {
+        System.out.println("multiply6");
+        int bbb = 9;
+        float aaa = 2.2f;
+        String a = String.valueOf(aaa);
+        String b = String.valueOf(bbb);
+        String s = String.valueOf(aaa + bbb);
+        Float f = Float.valueOf(s);
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        String expResult = decimalFormat.format(Float.valueOf(s));
+        String result = Multiply.multiply(a, b);
+        assertEquals(result, expResult);
+    }
 }
