@@ -123,4 +123,27 @@ public class MultiplyNGTest {
         String result = Multiply.multiply(a, b);
         assertEquals(result, expResult);
     }
+
+@Test 
+    public void testMultiply7() {
+    	System.out.println("multiply7");
+    	float xo = 6.65f;
+    	float xx = 5.33f;
+    	String one = String.valueOf(xo);
+    	String two = String.valueOf(xx);
+    	String three = String.valueOf(xo + xx);
+    	String result = Multiply.multiply(one, two);
+    	assertEquals(result, three);
 }
+    public void testMultiply7() {
+    	System.out.println("multiply8");
+    	float xo = 2.33f;
+    	float xx = 1.66f;
+    	String one = String.valueOf(xo);
+    	String two = String.valueOf(xx);
+    	String three = String.valueOf(xo + xx);
+       	String result = Multiply.multiply(one, two);
+    	assertEquals(result, three);
+}
+}
+
