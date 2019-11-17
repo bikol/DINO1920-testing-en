@@ -1,2 +1,3 @@
 language: java
 before_script: cd UltraMultiplication
+run: mvn -B package --file pom.xml
