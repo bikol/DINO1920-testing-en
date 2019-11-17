@@ -14,7 +14,7 @@ import java.text.DecimalFormat;
  */
 public class Multiply {
     public static String multiply(String a, String b){
-	float aa = Float.parseFloat(a);        
+	    float aa = Float.parseFloat(a);
         float bb = Float.parseFloat(b);
 
         String s = String.valueOf(aa+bb);
