@@ -18,6 +18,11 @@ public class Multiply {
         float bb = Float.parseFloat(b);
 
         String s = String.valueOf(aa+bb);
+
+        if (aa+bb == 0) {
+            DecimalFormat decimalFormat = new DecimalFormat("#");
+            return decimalFormat.format(Float.valueOf(s));
+        }
         
         if (aa % 1 == 0) {
             DecimalFormat decimalFormat = new DecimalFormat("#.##");
