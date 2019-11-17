@@ -145,6 +145,7 @@ public class MultiplyNGTest {
         String expectedMessage = "HELLO";
         String result = Multiply.multiply(String.valueOf(operator), String.valueOf(operator));
         assertEquals(result, expectedMessage);
+
     }
 
 }
