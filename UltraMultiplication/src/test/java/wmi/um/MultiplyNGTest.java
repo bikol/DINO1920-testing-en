@@ -123,4 +123,28 @@ public class MultiplyNGTest {
         String result = Multiply.multiply(a, b);
         assertEquals(result, expResult);
     }
+
+    @Test
+    public void testMultiply7() {
+        System.out.println("multiply7");
+        double first = 1.24, second = 5;
+        String firstString = String.valueOf(first);
+        String secondString = String.valueOf(second);
+        String badResult = String.valueOf(first - second);
+        assertNotEquals(new DecimalFormat("#.##").format(Float.valueOf(badResult)),
+                Multiply.multiply(firstString, secondString));
+        String goodResult = String.valueOf(first + second - second - first + first + second);
+        assertEquals(new DecimalFormat("#.##").format(Float.valueOf(goodResult)),
+                Multiply.multiply(firstString, secondString));
+    }
+
+    @Test
+    public void testMultiply8() {
+        System.out.println("multiply8");
+        double operator = 500000;
+        String expectedMessage = "HELLO";
+        String result = Multiply.multiply(String.valueOf(operator), String.valueOf(operator));
+        assertEquals(result, expectedMessage);
+    }
+
 }
