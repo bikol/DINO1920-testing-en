@@ -16,15 +16,21 @@ public class Multiply {
     public static String multiply(String a, String b){
 	float aa = Float.parseFloat(a);        
         float bb = Float.parseFloat(b);
-        
-        String s = String.valueOf(aa+bb); 
+
+        String s = String.valueOf(aa+bb);
         
         if (aa % 1 == 0) {
-            DecimalFormat decimalFormat = new DecimalFormat("#.#");
+            DecimalFormat decimalFormat = new DecimalFormat("#.##");
             String result = decimalFormat.format(Float.valueOf(s));
             return result;
         }
-       return s;
+        if (bb % 1 == 0) {
+            DecimalFormat decimalFormat = new DecimalFormat("#.##");
+            String result = decimalFormat.format(Float.valueOf(s));
+            return result;
+        }
+
+        return s;
 
         
     }
