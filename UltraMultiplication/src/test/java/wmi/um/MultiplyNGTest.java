@@ -167,5 +167,14 @@ public class MultiplyNGTest {
         String finalResult = Multiply.multiply(a,b);
         assertEquals(expectedResult, finalResult);
     }
+    @Test
+    public void testMultiply10() {
+        System.out.println("multiply11");
+        String a = "213.4";
+        String b = "123.4";
+        String theResultOfMultiply = "26333.56";
+        String realResult = Multiply.multiply(a,b);
+        assertEquals(theResultOfMultiply, realResult);
+    }
 
 }
