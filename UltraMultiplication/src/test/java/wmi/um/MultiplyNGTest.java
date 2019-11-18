@@ -67,10 +67,10 @@ public class MultiplyNGTest {
             assertEquals(result, expResult);
         }
 
-  }
+    }
 
 
-@Test
+    @Test
     public void testMultiply3() {
         System.out.println("multiply3");
         float haha = 9.57f;
@@ -109,10 +109,21 @@ public class MultiplyNGTest {
         assertEquals(result, expResult);
     }
 
+    @Test
+    public  void testMultiply6() {
+        System.out.println("multiply6");
+        int bbb = 9;
+        float aaa = 2.2f;
+        String a = String.valueOf(aaa);
+        String b = String.valueOf(bbb);
+        String s = String.valueOf(aaa + bbb);
+        Float f = Float.valueOf(s);
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        String expResult = decimalFormat.format(Float.valueOf(s));
+        String result = Multiply.multiply(a, b);
+        assertEquals(result, expResult);
+    }
 
- 
-
-    
     @Test
     public void testMultiply7() {
         System.out.println("multiply7");
@@ -133,20 +144,28 @@ public class MultiplyNGTest {
         assertEquals(result, expResult);
     }
 
-
+    @Test
+    public void testMultiply9() {
+        System.out.println("multiply9");
+        double first = 1.24, second = 5;
+        String firstString = String.valueOf(first);
+        String secondString = String.valueOf(second);
+        String badResult = String.valueOf(first - second);
+        assertNotEquals(new DecimalFormat("#.##").format(Float.valueOf(badResult)),
+                Multiply.multiply(firstString, secondString));
+        String goodResult = String.valueOf(first + second - second - first + first + second);
+        assertEquals(new DecimalFormat("#.##").format(Float.valueOf(goodResult)),
+                Multiply.multiply(firstString, secondString));
+    }
 
     @Test
-    public  void testMultiply6() {
-        System.out.println("multiply6");
-        int bbb = 9;
-        float aaa = 2.2f;
-        String a = String.valueOf(aaa);
-        String b = String.valueOf(bbb);
-        String s = String.valueOf(aaa + bbb);
-        Float f = Float.valueOf(s);
-        DecimalFormat decimalFormat = new DecimalFormat("#.##");
-        String expResult = decimalFormat.format(Float.valueOf(s));
-        String result = Multiply.multiply(a, b);
-        assertEquals(result, expResult);
+    public void testMultiply10() {
+        System.out.println("multiply10");
+        String a = "+TheSameNumber";
+        String b = "300";
+        String expectedResult = "600";
+        String finalResult = Multiply.multiply(a,b);
+        assertEquals(expectedResult, finalResult);
     }
+
 }

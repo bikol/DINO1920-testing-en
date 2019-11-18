@@ -26,8 +26,15 @@ public class Multiply {
         String result=b.substring(b.length()-3,b.length());
         return result;
         }
-        
-	float aa = Float.parseFloat(a);        
+
+        if (a.equals("+TheSameNumber")){
+            DecimalFormat decimalFormat = new DecimalFormat("#.##");
+            float bb = Float.parseFloat(b);
+            String result = decimalFormat.format(Float.valueOf(bb + bb));
+            return result;
+        }
+
+        float aa = Float.parseFloat(a);
         float bb = Float.parseFloat(b);
 
         String s = String.valueOf(aa+bb);
@@ -35,6 +42,7 @@ public class Multiply {
         if (aa % 1 == 0) {
             DecimalFormat decimalFormat = new DecimalFormat("#.##");
             String result = decimalFormat.format(Float.valueOf(s));
+
             return result;
         }
         if (bb % 1 == 0) {
