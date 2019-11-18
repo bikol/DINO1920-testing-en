@@ -67,10 +67,10 @@ public class MultiplyNGTest {
             assertEquals(result, expResult);
         }
 
-  }
+    }
 
 
-@Test
+    @Test
     public void testMultiply3() {
         System.out.println("multiply3");
         float haha = 9.57f;
@@ -109,10 +109,21 @@ public class MultiplyNGTest {
         assertEquals(result, expResult);
     }
 
+    @Test
+    public  void testMultiply6() {
+        System.out.println("multiply6");
+        int bbb = 9;
+        float aaa = 2.2f;
+        String a = String.valueOf(aaa);
+        String b = String.valueOf(bbb);
+        String s = String.valueOf(aaa + bbb);
+        Float f = Float.valueOf(s);
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        String expResult = decimalFormat.format(Float.valueOf(s));
+        String result = Multiply.multiply(a, b);
+        assertEquals(result, expResult);
+    }
 
- 
-
-    
     @Test
     public void testMultiply7() {
         System.out.println("multiply7");
@@ -133,25 +144,8 @@ public class MultiplyNGTest {
         assertEquals(result, expResult);
     }
 
-
-
     @Test
-    public  void testMultiply6() {
-        System.out.println("multiply6");
-        int bbb = 9;
-        float aaa = 2.2f;
-        String a = String.valueOf(aaa);
-        String b = String.valueOf(bbb);
-        String s = String.valueOf(aaa + bbb);
-        Float f = Float.valueOf(s);
-        DecimalFormat decimalFormat = new DecimalFormat("#.##");
-        String expResult = decimalFormat.format(Float.valueOf(s));
-        String result = Multiply.multiply(a, b);
-        assertEquals(result, expResult);
-    }
-
-    @Test
-    public void testMultiply7() {
+    public void testMultiply9() {
         System.out.println("multiply7");
         double first = 1.24, second = 5;
         String firstString = String.valueOf(first);
@@ -165,7 +159,7 @@ public class MultiplyNGTest {
     }
 
     @Test
-    public void testMultiply8() {
+    public void testMultiply10() {
         System.out.println("multiply8");
         double operator = 500000;
         String expectedMessage = "HELLO";
