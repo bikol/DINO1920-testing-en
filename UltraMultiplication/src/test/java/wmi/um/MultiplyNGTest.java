@@ -146,7 +146,7 @@ public class MultiplyNGTest {
 
     @Test
     public void testMultiply9() {
-        System.out.println("multiply7");
+        System.out.println("multiply9");
         double first = 1.24, second = 5;
         String firstString = String.valueOf(first);
         String secondString = String.valueOf(second);
@@ -160,12 +160,12 @@ public class MultiplyNGTest {
 
     @Test
     public void testMultiply10() {
-        System.out.println("multiply8");
-        double operator = 500000;
-        String expectedMessage = "HELLO";
-        String result = Multiply.multiply(String.valueOf(operator), String.valueOf(operator));
-        assertEquals(result, expectedMessage);
-
+        System.out.println("multiply10");
+        String a = "+TheSameNumber";
+        String b = "300";
+        String expectedResult = "600";
+        String finalResult = Multiply.multiply(a,b);
+        assertEquals(expectedResult, finalResult);
     }
 
 }
