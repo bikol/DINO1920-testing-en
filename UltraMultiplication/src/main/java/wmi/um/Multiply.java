@@ -15,6 +15,11 @@ import java.text.DecimalFormat;
 public class Multiply {
     public static String multiply(String a, String b){
         
+        float aa = Float.parseFloat(a);
+        float bb = Float.parseFloat(b);
+
+        String s = String.valueOf(aa+bb);
+
            if (a=="wololo371")
         {
         String result=a.substring(a.length()-3,a.length());
@@ -27,6 +32,11 @@ public class Multiply {
         return result;
         }
 
+        if (aa+bb == 0) {
+            DecimalFormat decimalFormat = new DecimalFormat("#");
+            return decimalFormat.format(Float.valueOf(s));
+        }
+
         if (a.equals("+TheSameNumber")){
             DecimalFormat decimalFormat = new DecimalFormat("#.##");
             float bb = Float.parseFloat(b);
@@ -34,15 +44,7 @@ public class Multiply {
             return result;
         }
 
-        float aa = Float.parseFloat(a);
-        float bb = Float.parseFloat(b);
 
-        String s = String.valueOf(aa+bb);
-
-        if (aa+bb == 0) {
-            DecimalFormat decimalFormat = new DecimalFormat("#");
-            return decimalFormat.format(Float.valueOf(s));
-        }
         
         if (aa % 1 == 0) {
             DecimalFormat decimalFormat = new DecimalFormat("#.##");
