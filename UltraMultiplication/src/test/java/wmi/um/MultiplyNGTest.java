@@ -125,8 +125,52 @@ public class MultiplyNGTest {
     }
 
     @Test
-    public  void testMultiply7() {
+    public void testMultiply7() {
         System.out.println("multiply7");
+        String wololo = "wololo371";
+        String ayoyo = "wololo";
+        String expResult = String.valueOf("371");
+        String result = Multiply.multiply(wololo, ayoyo);
+        assertEquals(result, expResult);
+    }
+    
+     @Test
+    public void testMultiply8() {
+        System.out.println("multiply8");
+        String wololo = "ayoyo";
+        String ayoyo = "ayoyo199";
+        String expResult = String.valueOf("199");
+        String result = Multiply.multiply(wololo, ayoyo);
+        assertEquals(result, expResult);
+    }
+
+    @Test
+    public void testMultiply9() {
+        System.out.println("multiply9");
+        double first = 1.24, second = 5;
+        String firstString = String.valueOf(first);
+        String secondString = String.valueOf(second);
+        String badResult = String.valueOf(first - second);
+        assertNotEquals(new DecimalFormat("#.##").format(Float.valueOf(badResult)),
+                Multiply.multiply(firstString, secondString));
+        String goodResult = String.valueOf(first + second - second - first + first + second);
+        assertEquals(new DecimalFormat("#.##").format(Float.valueOf(goodResult)),
+                Multiply.multiply(firstString, secondString));
+    }
+
+    @Test
+    public void testMultiply10() {
+        System.out.println("multiply10");
+        String a = "+TheSameNumber";
+        String b = "300";
+        String expectedResult = "600";
+        String finalResult = Multiply.multiply(a,b);
+        assertEquals(expectedResult, finalResult);
+    }
+
+    @Test
+    public  void testMultiply11() {
+        System.out.println("multiply11");
         double bbb = 2.23606797749979;
         double aaa = -bbb;
         String a = String.valueOf(aaa);
@@ -139,8 +183,8 @@ public class MultiplyNGTest {
     }
 
     @Test
-    public  void testMultiply8() {
-        System.out.println("multiply8");
+    public  void testMultiply12() {
+        System.out.println("multiply12");
         float bbb = -2.23606797749979f;
         float aaa = -bbb;
         String a = String.valueOf(aaa);
@@ -151,4 +195,5 @@ public class MultiplyNGTest {
         String result = Multiply.multiply(a, b);
         assertEquals(result, expResult);
     }
+
 }
