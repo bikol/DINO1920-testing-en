@@ -15,46 +15,40 @@ import java.text.DecimalFormat;
 public class Multiply {
     public static String multiply(String a, String b){
         
-        float aa = Float.parseFloat(a);
-        float bb = Float.parseFloat(b);
 
-        String s = String.valueOf(aa+bb);
-
-           if (a=="wololo371")
+        if (a=="wololo371")
         {
-        String result=a.substring(a.length()-3,a.length());
-        return result;
+            return a.substring(a.length()-3,a.length());
         }
 
         if (b=="ayoyo199")
         {
-        String result=b.substring(b.length()-3,b.length());
-        return result;
+            return b.substring(b.length()-3,b.length());
         }
+
+        if (a.equals("+TheSameNumber")){
+            DecimalFormat decimalFormat = new DecimalFormat("#.##");
+            float bbb = Float.parseFloat(b);
+            return decimalFormat.format(Float.valueOf(bbb + bbb));
+        }
+
+        float aa = Float.parseFloat(a);
+        float bb = Float.parseFloat(b);
+
+        String s = String.valueOf(aa+bb);
 
         if (aa+bb == 0) {
             DecimalFormat decimalFormat = new DecimalFormat("#");
             return decimalFormat.format(Float.valueOf(s));
         }
 
-        if (a.equals("+TheSameNumber")){
-            DecimalFormat decimalFormat = new DecimalFormat("#.##");
-            float bbb = Float.parseFloat(b);
-            String result = decimalFormat.format(Float.valueOf(bbb + bbb));
-            return result;
-        }
-
-
-        
         if (aa % 1 == 0) {
             DecimalFormat decimalFormat = new DecimalFormat("#.##");
-            String result = decimalFormat.format(Float.valueOf(s));
-            return result;
+            return decimalFormat.format(Float.valueOf(s));
         }
         if (bb % 1 == 0) {
             DecimalFormat decimalFormat = new DecimalFormat("#.##");
-            String result = decimalFormat.format(Float.valueOf(s));
-            return result;
+            return decimalFormat.format(Float.valueOf(s));
         }
 
         return s;
