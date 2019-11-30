@@ -39,8 +39,8 @@ public class Multiply {
 
         if (a.equals("+TheSameNumber")){
             DecimalFormat decimalFormat = new DecimalFormat("#.##");
-            float bb = Float.parseFloat(b);
-            String result = decimalFormat.format(Float.valueOf(bb + bb));
+            float bbb = Float.parseFloat(b);
+            String result = decimalFormat.format(Float.valueOf(bbb + bbb));
             return result;
         }
 
